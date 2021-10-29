@@ -16,7 +16,7 @@ namespace Assignment2WebAPI.Controllers
 
         public AdultsController(IAdult adult)
         {
-            Console.WriteLine("aleo bleadi");
+            
             adultService = adult;
         }
 
@@ -25,9 +25,9 @@ namespace Assignment2WebAPI.Controllers
         {
             try
             {
-                Console.WriteLine("lalalalalalala");
+               
                 IList<Adult> adults = await adultService.GetAsync();
-               Console.WriteLine(adults.Count+"lalalalalalala");
+            
                 string Json = JsonSerializer.Serialize(adults);
                 return Ok(Json);
             }

@@ -38,6 +38,7 @@ namespace Assignment2WebAPI.Data
 
             if (!temp.Password.Equals(Password))
             {
+              
                 throw new Exception("Incorrect password");
             }
 
