@@ -17,14 +17,10 @@ namespace Assignment2WebAPI.Data
         
         public async Task<List<Adult>> GetAsync()
         {
-            Console.WriteLine("Aleo");
             return fileContext.Adults.ToList();
         }
 
-        public async Task<Adult>GetByIdAsync(int id)
-        {
-            return fileContext.Adults.FirstOrDefault(a => a.Id == id);
-        }
+       
 
         public async  Task AddAsync(Adult adult)
         {

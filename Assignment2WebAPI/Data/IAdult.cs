@@ -7,8 +7,6 @@ namespace Assignment2WebAPI.Data
     public interface IAdult
     {
         Task<List<Adult>> GetAsync();
-        Task<Adult> GetByIdAsync(int id);
         Task AddAsync(Adult adult);
-       
     }
 }
