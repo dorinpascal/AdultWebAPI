@@ -238,35 +238,5 @@
     "Weight": 88,
     "Height": 187,
     "Sex": "M"
-  },
-  {
-    "JobTitle": {
-      "JobTitle": "Unemployed",
-      "Salary": 0
-    },
-    "Id": 16,
-    "FirstName": "d",
-    "LastName": "d",
-    "HairColor": "Black",
-    "EyeColor": "Brown",
-    "Age": 2,
-    "Weight": 2,
-    "Height": 2,
-    "Sex": "F"
-  },
-  {
-    "JobTitle": {
-      "JobTitle": "Prostitute",
-      "Salary": 3000
-    },
-    "Id": 17,
-    "FirstName": "Mihaela",
-    "LastName": "Trifan",
-    "HairColor": "Blond",
-    "EyeColor": "Blue",
-    "Age": 19,
-    "Weight": 55,
-    "Height": 161,
-    "Sex": "F"
   }
 ]
