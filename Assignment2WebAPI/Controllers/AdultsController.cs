@@ -25,15 +25,17 @@ namespace Assignment2WebAPI.Controllers
         {
             try
             {
+                Console.WriteLine(1);
                
                 IList<Adult> adults = await adultService.GetAsync();
             
+                Console.WriteLine(adults.Count+"lalalalala");
                 string Json = JsonSerializer.Serialize(adults);
+                Console.WriteLine(2);
                 return Ok(Json);
             }
             catch (Exception e)
             {
-                Console.WriteLine(5);
                 return StatusCode(500, e.Message);
             }
         }

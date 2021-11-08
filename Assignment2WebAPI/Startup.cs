@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Assignment2WebAPI.Data;
+using Assignment2WebAPI.Data.Repo;
 using Assignment2WebAPI.Persistence;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -31,11 +32,12 @@ namespace Assignment2WebAPI
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo {Title = "Assignment2WebAPI", Version = "v1"});
+                c.SwaggerDoc("v1", new OpenApiInfo {Title = "Assignment2WebAPI", Version = "v2"});
             });
-            services.AddScoped<IUser, InMemoryUser>();
+            services.AddScoped<IUser, UserRepo>();
             services.AddScoped<FileContext>();
-            services.AddScoped<IAdult, AdultsService>();
+            services.AddScoped<FileDBContext>();
+            services.AddScoped<IAdult, AdultsRepo>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
