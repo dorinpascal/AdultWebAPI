@@ -16,8 +16,8 @@ namespace Assignment2WebAPI
         public static void Main(string[] args)
         {
             //one time call 
-             addUser();
-             addAdult();
+            // addUser();
+            // addAdult();
             CreateHostBuilder(args).Build().Run();
         }
 
